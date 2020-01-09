@@ -61,8 +61,8 @@ print('INFO: predictions: ', pred[0])
 print('INFO: top prediction: ', pred.argmax())
 
 # Show image
-plt.imshow(x_test[image_index].reshape(x_input, y_input), cmap='Greys')
-plt.show()
+#plt.imshow(x_test[image_index].reshape(x_input, y_input), cmap='Greys')
+#plt.show()
 
 np.savetxt('%s_input_features.dat'%model_name, x_test, fmt='%g',)
 np.savetxt('%s_truth_labels.dat'%model_name, y_test, fmt='%g',)
